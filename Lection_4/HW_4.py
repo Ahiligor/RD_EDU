@@ -7,12 +7,12 @@
 3. Якщо це “слово”, програма має вказати його довжину.
 """
 
-text_or_value = input("Enter please any text ")
+x = input("Enter please any text: ")
 
-if text_or_value is int:
-    print("This is 'number")
+if x.isdigit():
+   if int(x)%2==0:
+        print(f"{x} is even")
+   else:
+        print(f"{x} is odd")
 else:
-    print("This is text")
-
-print(type(text_or_value))
-print(text_or_value)
+    print(f"x is a word with len of {len(x)}")
