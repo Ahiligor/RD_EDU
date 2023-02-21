@@ -15,4 +15,4 @@ if x.isdigit():
    else:
         print(f"{x} is odd")
 else:
-    print(f"x is a word with len of {len(x)}")
+    print(f"This is a word with len of {len(x)}")
