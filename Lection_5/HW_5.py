@@ -12,14 +12,31 @@ text = input("Enter any text please: ")
 for letter in text:
     if letter.isdigit():
         if int(letter) % 2 == 0:
-            print("This is a digit and it is even")
+            print(f"This is a digit {letter} and it is even")
         else:
-            print("This is a digit and it is odd")
+            print(f"This is a digit {letter} and it is odd")
     elif letter.isupper():
-        print("Letter is Capital")
+        print(f"This is Letter {letter} and it's Capital")
     elif letter.islower():
-        print("Letter is Small")
+        print(f"This is Letter {letter} and it's Small")
     elif letter.isspace():
         print("This is space")
-    elif letter.isalnum():
-        print("This is a symbol")
+    else:
+        print(f"This is a symbol {letter}")
+
+# ===============================================
+
+"""
+Task 2.
+
+Створити програму, яка буде друкувати в консоль “I love Python” кожні 4.2 секунди, 
+поки її виконання не буде перервано вручну.
+
+Підказка: для того, щоб програма могла зупинитися на вказаний час, можна використати бібліотеку time (import time), 
+а саме функцію sleep(). (time.sleep(second), де second, це кількість секунд, які програма має чекати).
+"""
+import time
+
+while True:
+    print("I Love Python")
+    time.sleep(4.2)
