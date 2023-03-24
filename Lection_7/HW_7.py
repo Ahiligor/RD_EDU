@@ -2,4 +2,11 @@ def i_love_python():
     print("I love Python")
 
 
-i_love_python()
+
+my_list = ['apple', 'banana', 1, True, False, 1.234]
+
+if 'apple' in my_list:
+    print("It's here")
+else:
+    pass
+
