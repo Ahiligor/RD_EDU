@@ -9,4 +9,3 @@ if 'apple' in my_list:
     print("It's here")
 else:
     pass
-
